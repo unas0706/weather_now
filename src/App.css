@@ -18,6 +18,11 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+}
+
 html,
 body {
   height: 100%;
