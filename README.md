@@ -1,4 +1,4 @@
-# 🌦️ Interactive Weather Report App
+# 🌦️ Interactive Weather Now
 
 An elegant and interactive **weather application** built using **React**, **Leaflet**, and **Open-Meteo API**.
 This app automatically detects the user's current location, shows live weather details, and allows clicking anywhere on the map to view weather data for that exact point — all styled using **custom CSS** designed from scratch.
@@ -92,17 +92,6 @@ https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&current_we
 ```
 
 ✅ No API key or authentication required!
-
----
-
-## 🖼️ Screenshots (Add Later)
-
-You can include visuals like:
-
-```
-![App Screenshot](https://drive.google.com/file/d/1QkjP88zP4i5lM_hsLFhsnQr0L50XfNVo/view?usp=drivesdkg)
-![Weather Info](https://drive.google.com/file/d/1dxpJaQ8GgC74y5LtPjEwIy564mpR5mK5/view?usp=drivesdk)
-```
 
 ---
 
