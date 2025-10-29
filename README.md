@@ -1,4 +1,4 @@
-# 🌦️ Interactive Weather Now
+# 🌦️Weather Now
 
 An elegant and interactive **weather application** built using **React**, **Leaflet**, and **Open-Meteo API**.
 This app automatically detects the user's current location, shows live weather details, and allows clicking anywhere on the map to view weather data for that exact point — all styled using **custom CSS** designed from scratch.
