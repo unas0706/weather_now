@@ -1,16 +1,129 @@
-# React + Vite
+# 🌦️ Interactive Weather Report App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An elegant and interactive **weather application** built using **React**, **Leaflet**, and **Open-Meteo API**.
+This app automatically detects the user's current location, shows live weather details, and allows clicking anywhere on the map to view weather data for that exact point — all styled using **custom CSS** designed from scratch.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- 📍 **Auto-detect current location** using the browser’s Geolocation API
+- 🗺️ **Interactive map** powered by Leaflet (click to get latitude & longitude)
+- 🌡️ **Live temperature, wind speed, and time** from Open-Meteo API
+- 💡 **Custom UI styling** built entirely with plain CSS (no frameworks)
+- ⚡ **Lightweight, fast, and free** — no API key required
+- 🌍 **Responsive design** across devices
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧪 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Category    | Technology                 |
+| ----------- | -------------------------- |
+| Frontend    | React (Vite)               |
+| Map Library | Leaflet + React Leaflet    |
+| Weather API | Open-Meteo                 |
+| Styling     | Custom CSS (no frameworks) |
+| Icons       | Flaticon                   |
+
+---
+
+## ⚙️ Installation & Setup
+
+Follow these steps to run the project locally:
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/unas0706/weather_now
+cd weather_now
+```
+
+### 2️⃣ Install Dependencies
+
+```bash
+npm install
+```
+
+### 3️⃣ Start the Development Server
+
+```bash
+npm run dev
+```
+
+Then open your browser and visit:
+
+```
+http://localhost:5173/
+```
+
+---
+
+## 🌍 How It Works
+
+1. On startup, the app requests **geolocation permission**.
+2. Once allowed, it fetches your **latitude & longitude**.
+3. The map centers on your live position and shows a marker.
+4. The app uses **Open-Meteo API** to get current weather data.
+5. Clicking anywhere on the map updates the weather for that location.
+
+---
+
+## 🧠 API Reference
+
+**Endpoint:**
+
+```
+https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&current_weather=true
+```
+
+**Sample Response:**
+
+```json
+{
+  "latitude": 17.38,
+  "longitude": 78.48,
+  "current_weather": {
+    "temperature": 27.3,
+    "windspeed": 4.7,
+    "time": "2025-10-29T12:00"
+  }
+}
+```
+
+✅ No API key or authentication required!
+
+---
+
+## 🖼️ Screenshots (Add Later)
+
+You can include visuals like:
+
+```
+![App Screenshot](https://drive.google.com/file/d/1QkjP88zP4i5lM_hsLFhsnQr0L50XfNVo/view?usp=drivesdkg)
+![Weather Info](https://drive.google.com/file/d/1dxpJaQ8GgC74y5LtPjEwIy564mpR5mK5/view?usp=drivesdk)
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+If you’d like to improve this project:
+
+1. Fork this repository
+2. Create a new branch: `git checkout -b feature-name`
+3. Commit changes: `git commit -m "Add new feature"`
+4. Push: `git push origin feature-name`
+5. Open a Pull Request
+
+---
+
+## 🧑‍💻 Author
+
+**Unas Sk**
+💼 MERN Stack Developer
+📧 [sk.unas123@gmail.com](mailto:sk.unas123@gmail.com)
+🐙 [GitHub](https://github.com/unas0706)
+
+---
